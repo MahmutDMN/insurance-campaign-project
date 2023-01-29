@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "f5352df0-def5-4be3-a81a-5d6d19577e32",
+		"name": "Case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/checkService",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7070/checkService",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"checkService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/addCampaign",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"campaignHeader\":\"Tamamlayıcı saglık sigortası 2 header\",\r\n    \"campaignDetail\":\"Tamamlayıcı saglık sigortası 1 detail aaaaaaaaaaaaaaaaaaa\",\r\n    \"campaignCategory\":\"Tamamlayıcı Sağlık Sigortası\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7070/addCampaign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"addCampaign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/getAllCampaign",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7070/getAllCampaign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"getAllCampaign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/changeCampaignStatus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"campaignId\":1,\r\n    \"campaignStatusName\":\"Aktif\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7070/changeCampaignStatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"changeCampaignStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/dashboard/classifieds/statistics",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7070/dashboard/classifieds/statistics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"dashboard",
+						"classifieds",
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
